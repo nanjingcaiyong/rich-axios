@@ -1,0 +1,58 @@
+{
+  "name": "rich-axios",
+  "version": "0.0.1",
+  "description": "axios 二次封装",
+  "author": "caiyong <yong.cai@kapeixi.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "keywords": [
+    "axios",
+    "vue",
+    "cupshe",
+    "client"
+  ],
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nanjingcaiyong/rich-axios"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "lint:fix": "eslint --fix --ext .js,.ts lib",
+    "lint": "eslint --ext .js,.ts lib",
+    "release": "standard-version --infile CHANGELOG.md",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "abortcontroller-polyfill": "^1.7.3",
+    "axios-retry": "^3.2.5",
+    "core-js": "^3.21.1",
+    "qs": "^6.10.3"
+  },
+  "peerDependencies": {
+    "axios": "^0.26.1"
+  },
+  "gitHead": "112ce0a10bd4a3cc514a9dd861f4e8ffd5671f2c",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "commitizen": "^4.2.4",
+    "core-js": "^3.21.1",
+    "eslint": "^8.17.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "standard-version": "^9.5.0"
+  }
+}
